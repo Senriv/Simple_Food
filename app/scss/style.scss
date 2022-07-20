@@ -97,11 +97,11 @@
   }
 
   &__btn--search::before {
-    background-image: url("../images/icons/search.svg");
+    background-image: url("../images/sprite.svg#search");
   }
 
   &__btn--basket::before {
-    background-image: url("../images/icons/basket.svg");
+    background-image: url("../images/sprite.svg#basket");
   }
 
   &__btn:focus {
@@ -342,23 +342,23 @@
     }
 
     &--burger::before {
-      mask-image: url("../images/icons/burger.svg");
+      mask-image: url("../images/sprite.svg#burger");
     }
 
     &--pizza::before {
-      mask-image: url("../images/icons/pizza.svg");
+      mask-image: url("../images/sprite.svg#pizza");
     }
 
     &--sandwich::before {
-      mask-image: url("../images/icons/sandwich.svg");
+      mask-image: url("../images/sprite.svg#sandwich");
     }
 
     &--asia::before {
-      mask-image: url("../images/icons/asia.svg");
+      mask-image: url("../images/sprite.svg#asia");
     }
 
     &--dish::before {
-      mask-image: url("../images/icons/dish.svg");
+      mask-image: url("../images/sprite.svg#dish");
     }
 
     &:focus {
@@ -463,7 +463,7 @@
     }
 
     &--signup::before {
-      background-image: url("../images/icons/signup.svg");
+      background-image: url("../images/sprite.svg#signup");
     }
 
     &:focus {
@@ -526,15 +526,15 @@
     }
 
     &--location::before {
-      background-image: url("../images/icons/location.svg");
+      background-image: url("../images/sprite.svg#location");
     }
 
     &--calling::before {
-      background-image: url("../images/icons/calling.svg");
+      background-image: url("../images/sprite.svg#calling");
     }
 
     &--message::before {
-      background-image: url("../images/icons/message.svg");
+      background-image: url("../images/sprite.svg#message");
     }
 
   }
