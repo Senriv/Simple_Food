@@ -133,7 +133,7 @@
     padding: 155px 0;
     background-image: url("../images/hero-img.png");
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 48%;
     background-position: right;
   }
 
@@ -577,6 +577,8 @@
 }
 
 .reviews {
+  margin-bottom: 119px;
+
   &__title {
     text-align: center;
     margin-bottom: 45px;
@@ -730,6 +732,72 @@
   }
 }
 
+.application {
+  margin-bottom: 119px;
+  
+
+  &__inner {
+    min-height: 380px;
+    background-image: url("../images/application_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 49%;
+    background-position: right;
+    display: flex;
+  }
+
+  &__content {
+    max-width: 540px;
+    margin: auto 0;
+  }
+
+  &__title {
+    margin-bottom: 45px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin-bottom: 30px;
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 14px;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 135px;
+    height: 40px;
+  }
+
+  &__link {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 135px;
+      height: 40px;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+    }
+
+    &--app-store::before {
+      background-image: url("../images/application_app-store.jpg");
+    }
+
+    &--google-play::before {
+      background-image: url("../images/application_google-play.jpg");
+    }
+  }
+}
+
 .footer-top {
   &__logo {
     margin-bottom: 30px;
@@ -834,7 +902,7 @@
     position: relative;
 
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     &::before {
@@ -935,7 +1003,7 @@
 
   padding-bottom: 60px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 187px 1fr;
+  grid-template-columns: 200px 153px 92px 187px 1fr;
   column-gap: 70px;
 }
 
