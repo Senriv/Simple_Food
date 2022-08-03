@@ -1,0 +1,63 @@
+.application {
+    margin-bottom: 119px;
+  
+    &__inner {
+      min-height: 380px;
+      background-repeat: no-repeat;
+      background-size: 49%;
+      background-position: right;
+      display: flex;
+    }
+  
+    &__content {
+      max-width: 540px;
+      margin: auto 0;
+    }
+  
+    &__title {
+      margin-bottom: 45px;
+    }
+  
+    &__text {
+      font-size: 20px;
+      line-height: 1.5;
+      opacity: 0.9;
+      margin-bottom: 30px;
+    }
+  
+    &__items {
+      display: flex;
+    }
+  
+    &__item:not(:last-child) {
+      margin-right: 14px;
+    }
+  
+    &__item {
+      display: inline-block;
+      width: 135px;
+      height: 40px;
+    }
+  
+    &__link {
+      position: relative;
+  
+      &::before {
+        position: absolute;
+        content: "";
+        width: 135px;
+        height: 40px;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+      }
+  
+      &--app-store::before {
+        background-image: url("../images/application_app-store.jpg");
+      }
+  
+      &--google-play::before {
+        background-image: url("../images/application_google-play.jpg");
+      }
+    }
+  }

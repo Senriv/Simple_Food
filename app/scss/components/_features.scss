@@ -1,0 +1,74 @@
+.features {
+    &__inner {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 auto 120px;
+      background-repeat: no-repeat;
+      background-size: 43%;
+      background-position: left;
+      max-width: 1030px;
+      min-height: 585px;
+    }
+  
+    &__content {
+      max-width: 470px;
+      margin: auto 0;
+    }
+  
+    &__title {
+      margin-bottom: 30px;
+      max-width: 400px;
+      @include line-clamp(2);
+    }
+  
+    &__text {
+      opacity: 0.9;
+      margin-bottom: 30px;
+      @include line-clamp(3);
+    }
+  
+    &__list {
+      margin-bottom: 30px;
+    }
+  
+    &__item:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  
+    &__subtext {
+      font-size: 24px;
+      line-height: 1.5;
+      padding-left: 64px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 34px;
+        height: 34px;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+      }
+      &--timer::before {
+        background-image: url("../images/sprite.svg#timer");
+      }
+      &--delivery::before {
+        background-image: url("../images/sprite.svg#delivery");
+      }
+      &--resturent::before {
+        background-image: url("../images/sprite.svg#resturent");
+      }
+    }
+  
+    &__btn {
+      background-color: $orange-900;
+      border-radius: 6px;
+      color: $white;
+      border: none;
+      font-size: 18px;
+      line-height: 1.3;
+      letter-spacing: 0.03em;
+      padding: 12px 32px;
+      cursor: pointer;
+    }
+  }
