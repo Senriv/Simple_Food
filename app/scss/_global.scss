@@ -32,3 +32,19 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.logo {
+  &:focus {
+    outline: rgba(255, 255, 255);
+    box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+    border-radius: 5px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
